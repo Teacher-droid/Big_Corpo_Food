@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #8B0000;
+
+}
+
+body{
+    
+    /* margin: 0 55px; */
+    margin: auto;
+}
+
+h1{
+     /* margin: 200px 0; */
+	font-size: 100px;
+    width: 1065px;
+    /* margin: auto; */
+    color: rgb(145, 3, 3);
+	font-style: bold;
+	font-family:'Old English Text MT', serif;
+}	
+
+
+#card_1 > big-card {
+	top: -245px;
+	left: -32px;
+}
+#card_2{
+    top: 100px;
+    left: 70px;
+}
+.flip-card {
+	margin: 50px 0;
+	background-color: transparent;
+	width: 500px;
+	height: 500px;
+	perspective: 1000px;
+}
+
+.big-card{
+	width: 1010px;
+	height:106px;
+	width: 1014px;
+	height: 94px;
+	top: 224px;
+	left: 1527px;
+	position: absolute;
+}
+
+.small-card{
+	width: 500px;
+	height: 500px;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #e2dac3;
+  color: white;
+  transform: rotateY(180deg);
+}
+header{
+    /* display permet de modifier le comportement d'un Ã©lÃ©ment */
+    /* grid fait que l'element est une grille */
+    display: grid;
+    /* grid-template-columns permet de definir la tailles des colonnes */
+    /* ont peut utilisÃ© pour cela des fraction( fr ) ou des pixel ( px ) ou des pourcentage ( % ) */
+    grid-template-columns: 1fr 2fr;
+    /*
+        margin sert a repousÃ© les Ã©lÃ©ments autour
+        l'ont peut utilsiÃ© jusque 4 valeur
+        margin : 100px - donne des marges tout autour de l'Ã©lÃ©ment
+        margin: 100px 10px - donne des marge haute et basse de 100px et droite et gauche de 10px
+        margin: 10px 20px 30px 40px - donneras une marge haute de 10px, une marge droite de 20px une marge bas de 30px et une marge gauche de 40px
+
+        ont peut plus simplement faire:
+        margin-top ou margin-right ou margin-left ou margin-bottom
+    */
+    margin-top: 50px;
+}
+
+header nav{
+    /* les Ã©lements flex sont plus facile a disposÃ© en lignes ou en colonnes */
+    display: flex;
+    /* crÃ©Ã© de l'espace entre chaque Ã©lement enfant ici les enfant de nav sont des a */
+    justify-content: space-between;
+    margin-left: 105px;
+}
+
+a{
+    /* ne souligne pas les liens */
+    text-decoration: none;
+}
+
+main{
+    margin-top: 100px;
+    
+}
+main > div{
+    margin: 50px 0;
+}
+h3{
+    font-size: 14px;
+}
+
+h2,h3,p{
+    margin: 45px 0;
+}
+p{
+  font-style: italic;  
+}
+h2{
+    font-family: Old English Text MT, sans-serif;
+    font-size: 22px;
+}
+
+p{
+    /* permet de modifier la taille des lignes pour crÃ©Ã© de l'espace dans du texte */
+    line-height: 20px;
+    text-align: justify;
+	font-style: italic;
+}
+
+
+footer{
+    background-color: #f6f6f6;
+    padding: 0 15 px;
+}
+
+.old-english{
+    font-family: 'Old English Text MT', serif;
+    font-weight: 100;
+}
+
+.grey_font{
+    color: #f3f3f3;
+}
+
+.display_flex{
+    display: flex;
+}
+
+.content_space_around{
+    justify-content: space-between;
+}
+.content_center{
+    /* permet de centrÃ© le contenu d'un Ã©lÃ©ment flex */
+    justify-content: center;
+}
+.align_item_center{
+    align-items: center;
+}
+
+.font_uppercase{
+    /* permet de passer du texte en majucule */
+    text-transform: uppercase;
+}
+
+.less_large{
+    width: 900px;
+    /* si un Ã©lement a une taille margin:auto permet de le centrÃ© */
+    margin: auto;
+}
+
+
+.display_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap permet de mettre de l'espace entre des Ã©lÃ©ments dans un context grid */
+    grid-gap: 40px;
+}
+
+
+.newsletters_zone{
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 50px;
+    margin: 100px 0;
+}
+
+.newsletters_zone input{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: #f3f3f3;
+    width: 375px;
+    padding: 6px;
+    line-height: 30px;
+}
+
+.display_block{
+    /* appliquÃ© sur un Ã©lements a qui est inline ce qui permet de lui donnÃ©e une hauteur et une largeur */
+    display: block;
+    width: 20px;
+    height: 20px;
+} 
+
+.img_sprite{
+    background-image: url(img/rs_sprite.jpg);
+    background-repeat: no-repeat;
+}
+
+.no-shadow_box{
+	box-shadow:none;
+}
+
+#rs_fb{
+    background-position: -65px 0px;
+}
+#rs_tw{
+    background-position: -35px 0;
+}
+#rs_insta{
+    background-position: 0px 0px;
+}
+
+main div:nth-child(1) a {
+    display: block;
+    margin: 50px 0 100px 0;
+}
+
+#button_send{
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 6px 0;
+}
+
+#fixed_width_footer_box_rs{
+    width: 150px;
+}
+
+
+
+#load_more_btn{
+    margin: 100px auto;
+    width: 65px;
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid #5f5e5e;
+    /* permet de changÃ© seulement la couleur du bord que l'on souhaite */
+    border-bottom-color: #d6d1d1;
+    border-right-color: #d6d1d1;
+}
+
+#term_privacy_footer{
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
